@@ -5,46 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Premium freelance video editing portfolio for YouTube, Reels, talking-head content, and thumbnails. Hire a conversion-focused editor for high-retention content."
+      content="Professional video editor portfolio with cinematic style, animated showcases, testimonials, and contact details."
     />
-    <meta
-      name="keywords"
-      content="freelance video editor, youtube video editing, reels editor, thumbnail design, short-form content editor"
-    />
-    <meta name="author" content="Video Editor Portfolio" />
-    <meta property="og:title" content="Professional Video Editing That Converts Views Into Impact" />
-    <meta
-      property="og:description"
-      content="Modern, conversion-focused video editing services for creators and brands."
-    />
-    <meta property="og:type" content="website" />
-    <title>Premium Video Editor Portfolio</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230f0f0f'/%3E%3Cpath d='M22 30h16l12 40h-12l-2-8H23l-2 8H10l12-40Zm4 23h8l-4-14-4 14Zm38-23h26v10h-8v30H72V40h-8V30Z' fill='%236f7bff'/%3E%3C/svg%3E" />
+    <title>Professional Video Editor Portfolio</title>
+
+    <!-- Google Font for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon library for section and social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPRWtQmVQ85pkQy4jUeR+zqHjXcR2vYhX+Q5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-transition"></div>
-    <div class="preloader" id="preloader" aria-hidden="true">
-      <div class="preloader__ring"></div>
-      <p>Loading Experience...</p>
-    </div>
+    <!-- Decorative background glow -->
+    <div class="bg-grid" aria-hidden="true"></div>
 
-    <div class="scroll-progress" id="scrollProgress"></div>
+    <header class="site-header">
+      <nav class="container nav">
+        <a href="#hero" class="logo">VFX<span>Edit</span></a>
 
-    <header class="header" id="top">
-      <nav class="nav container">
-        <a href="#top" class="logo">VE<span>Studio</span></a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
         <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#edits">Best Edits</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -52,235 +51,141 @@
     </header>
 
     <main>
-      <section class="hero section">
-        <div class="hero-bg"></div>
+      <!-- 1) Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="hero-parallax" aria-hidden="true"></div>
+
+        <!-- Floating elements around hero -->
+        <i class="fa-solid fa-film float-icon i1" aria-hidden="true"></i>
+        <i class="fa-solid fa-clapperboard float-icon i2" aria-hidden="true"></i>
+        <i class="fa-solid fa-play float-icon i3" aria-hidden="true"></i>
+        <i class="fa-solid fa-music float-icon i4" aria-hidden="true"></i>
+
         <div class="container hero-content reveal">
-          <p class="eyebrow">Freelance Video Editing for Serious Growth</p>
-          <h1>Professional Video Editing That Converts Views Into Impact</h1>
-          <p class="hero-subheadline">
-            I craft high-retention edits for creators and brands who want premium storytelling,
-            faster growth, and better conversions across YouTube and social media.
+          <p class="tagline">Creative storytelling • Cinematic pacing • Clean cuts</p>
+          <h1>Professional Video Editor</h1>
+          <p>
+            I transform raw clips into scroll-stopping visual stories for brands, creators, and
+            businesses looking for premium, engaging content.
           </p>
-          <p class="typing-line">I am a <span id="typingText"></span><span class="cursor">|</span></p>
-          <div class="hero-cta">
-            <a href="#portfolio" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Hire Me Now</a>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </section>
+
+      <!-- 2) About Me Section -->
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title reveal">ABOUT ME</h2>
+          <p class="section-copy reveal">
+            I am a detail-oriented video editor focused on pacing, color mood, and emotional impact.
+            From short-form reels to narrative vlogs, I craft edits that keep viewers watching and
+            strengthen your brand voice.
+          </p>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal"><i class="fa-solid fa-video"></i><span>Editing</span></article>
+            <article class="skill-card reveal"><i class="fa-solid fa-palette"></i><span>Color Grade</span></article>
+            <article class="skill-card reveal"><i class="fa-solid fa-wave-square"></i><span>Sound Design</span></article>
+            <article class="skill-card reveal"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Motion FX</span></article>
           </div>
         </div>
       </section>
 
-      <section class="stats section reveal">
-        <div class="container stats-grid">
-          <article class="stat-card glass">
-            <h3><span class="counter" data-target="120">0</span>+</h3>
-            <p>Projects Delivered</p>
-          </article>
-          <article class="stat-card glass">
-            <h3><span class="counter" data-target="98">0</span>%</h3>
-            <p>Client Satisfaction</p>
-          </article>
-          <article class="stat-card glass">
-            <h3><span class="counter" data-target="30">0</span>M+</h3>
-            <p>Total Views Generated</p>
-          </article>
-          <article class="stat-card glass">
-            <h3><span class="counter" data-target="48">0</span>h</h3>
-            <p>Fast Turnaround</p>
-          </article>
-        </div>
-      </section>
+      <!-- 3) My Best Edits Section -->
+      <section id="edits" class="section edits">
+        <div class="container">
+          <h2 class="section-title reveal">MY BEST EDITS</h2>
 
-      <section class="about section" id="about">
-        <div class="container about-grid reveal">
-          <div class="about-photo glass">
-            <div class="photo-placeholder">Professional Photo</div>
-          </div>
-          <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-              I help personal brands, coaches, and business creators stand out with modern,
-              conversion-oriented video editing. From long-form YouTube episodes to snappy
-              short-form clips, every frame is designed to maximize watch time and impact.
-            </p>
-            <div class="skills">
-              <div class="skill-item" data-skill="92">
-                <div class="skill-head"><span>Adobe Premiere Pro</span><span>92%</span></div>
-                <div class="skill-track"><span class="skill-fill"></span></div>
+          <div class="edits-grid">
+            <article class="edit-card reveal">
+              <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80" alt="Reel editing project thumbnail" />
+              <div class="overlay">
+                <span>Reel</span>
+                <i class="fa-solid fa-circle-play"></i>
               </div>
-              <div class="skill-item" data-skill="86">
-                <div class="skill-head"><span>Adobe Photoshop</span><span>86%</span></div>
-                <div class="skill-track"><span class="skill-fill"></span></div>
-              </div>
-              <div class="skill-item" data-skill="88">
-                <div class="skill-head"><span>Color Grading</span><span>88%</span></div>
-                <div class="skill-track"><span class="skill-fill"></span></div>
-              </div>
-              <div class="skill-item" data-skill="80">
-                <div class="skill-head"><span>Motion Graphics Basics</span><span>80%</span></div>
-                <div class="skill-track"><span class="skill-fill"></span></div>
-              </div>
-              <div class="skill-item" data-skill="84">
-                <div class="skill-head"><span>Sound Design</span><span>84%</span></div>
-                <div class="skill-track"><span class="skill-fill"></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </article>
 
-      <section class="services section" id="services">
-        <div class="container reveal">
-          <h2>Services</h2>
-          <div class="services-grid">
-            <article class="service-card glass">
-              <span class="icon">🎬</span>
-              <h3>YouTube Long Form Editing</h3>
-              <p>Story-driven edits, pacing optimization, B-roll integration, and retention hooks.</p>
+            <article class="edit-card reveal">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Vlog editing project thumbnail" />
+              <div class="overlay">
+                <span>Vlog</span>
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
             </article>
-            <article class="service-card glass">
-              <span class="icon">📱</span>
-              <h3>Shorts / Reels Editing</h3>
-              <p>Fast-paced short-form content with captions, punch-in effects, and viral structure.</p>
-            </article>
-            <article class="service-card glass">
-              <span class="icon">🖼️</span>
-              <h3>Thumbnail Design</h3>
-              <p>Click-focused thumbnail design that aligns with your brand and boosts CTR.</p>
-            </article>
-            <article class="service-card glass">
-              <span class="icon">♻️</span>
-              <h3>Content Repurposing</h3>
-              <p>Turn one long video into multiple short assets for multi-platform reach.</p>
+
+            <article class="edit-card reveal">
+              <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=80" alt="Casual content editing project thumbnail" />
+              <div class="overlay">
+                <span>Casual</span>
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="portfolio section" id="portfolio">
-        <div class="container reveal">
-          <h2>Featured Work</h2>
-          <div class="filter-buttons" id="filterButtons">
-            <button class="active" data-filter="all">All</button>
-            <button data-filter="youtube">YouTube</button>
-            <button data-filter="reels">Reels</button>
-            <button data-filter="thumbnails">Thumbnails</button>
-          </div>
-          <div class="portfolio-grid" id="portfolioGrid">
-            <article class="portfolio-item" data-category="youtube">
-              <iframe data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Project 1" loading="lazy" allowfullscreen></iframe>
-              <div class="overlay">YouTube Documentary Edit</div>
-            </article>
-            <article class="portfolio-item" data-category="reels">
-              <iframe data-src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Reels Project 1" loading="lazy" allowfullscreen></iframe>
-              <div class="overlay">Instagram Reels Growth Campaign</div>
-            </article>
-            <article class="portfolio-item" data-category="youtube">
-              <iframe data-src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube Project 2" loading="lazy" allowfullscreen></iframe>
-              <div class="overlay">Talking-Head Authority Video</div>
-            </article>
-            <article class="portfolio-item" data-category="thumbnails">
-              <div class="thumb-placeholder">Thumbnail Concept Showcase</div>
-              <div class="overlay">Thumbnail Design Collection</div>
-            </article>
-            <article class="portfolio-item" data-category="reels">
-              <iframe data-src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Reels Project 2" loading="lazy" allowfullscreen></iframe>
-              <div class="overlay">Short-form Brand Story Ad</div>
-            </article>
-            <article class="portfolio-item" data-category="thumbnails">
-              <div class="thumb-placeholder">CTR-Oriented Thumbnail Variants</div>
-              <div class="overlay">High CTR Thumbnail A/B Set</div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <!-- 4) Testimonials Section -->
+      <section id="testimonials" class="section testimonials">
+        <div class="container">
+          <h2 class="section-title reveal">TESTIMONIALS</h2>
 
-      <section class="testimonials section" id="testimonials">
-        <div class="container reveal">
-          <h2>Client Testimonials</h2>
-          <div class="testimonial-track" id="testimonialTrack">
-            <article class="testimonial-card glass active">
-              <p class="stars">★★★★★</p>
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <h3>Sarah Kim</h3>
               <p>
-                “Our watch time increased dramatically after just 3 videos. Super premium edits and
-                incredible communication.”
+                “Super smooth workflow and incredible storytelling. My watch time jumped in the
+                first month after we started working together.”
               </p>
-              <h4>Sarah K. — YouTube Coach</h4>
             </article>
-            <article class="testimonial-card glass">
-              <p class="stars">★★★★★</p>
+
+            <article class="testimonial-card reveal">
+              <h3>Jason Ortiz</h3>
               <p>
-                “He transformed our raw footage into high-converting reels that brought actual leads
-                within the first week.”
+                “Every edit feels premium and intentional. The pacing, sound, and color are always
+                on point. Highly recommended.”
               </p>
-              <h4>Daniel M. — Agency Founder</h4>
             </article>
-            <article class="testimonial-card glass">
-              <p class="stars">★★★★★</p>
+
+            <article class="testimonial-card reveal">
+              <h3>Maya Patel</h3>
               <p>
-                “Fast delivery, top-tier style, and endless patience on revisions. Exactly what a
-                serious creator needs.”
+                “Delivered exactly the vibe I wanted. Fast turnaround, clean communication, and
+                polished final videos every single time.”
               </p>
-              <h4>Aisha R. — Personal Brand Creator</h4>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="why section" id="why">
+      <!-- 5) Contact Section -->
+      <section id="contact" class="section contact">
         <div class="container reveal">
-          <h2>Why Choose Me</h2>
-          <div class="why-grid">
-            <article class="why-card glass"><span>⚡</span><h3>Fast Delivery</h3></article>
-            <article class="why-card glass"><span>📈</span><h3>High Retention Editing Style</h3></article>
-            <article class="why-card glass"><span>🔍</span><h3>SEO-Optimized Content Structure</h3></article>
-            <article class="why-card glass"><span>🔁</span><h3>Unlimited Revisions</h3></article>
-          </div>
-        </div>
-      </section>
+          <h2 class="section-title">I AM READY TO CONSULT YOU</h2>
+          <p class="section-copy">Let's create content your audience remembers.</p>
 
-      <section class="contact section" id="contact">
-        <div class="container contact-grid reveal">
-          <div>
-            <h2>Let’s Build Content That Converts</h2>
-            <p>Tell me about your project and I’ll get back with a tailored editing plan.</p>
-            <div class="contact-links">
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener">WhatsApp</a>
-              <a href="mailto:hello@vestudio.com">hello@vestudio.com</a>
-            </div>
-            <div class="social-icons">
-              <a href="#" aria-label="Instagram">IG</a>
-              <a href="#" aria-label="YouTube">YT</a>
-              <a href="#" aria-label="LinkedIn">IN</a>
-            </div>
+          <div class="contact-details">
+            <p><i class="fa-solid fa-envelope"></i> editor@portfolio.com</p>
+            <p><i class="fa-solid fa-phone"></i> +1 (555) 123-9876</p>
           </div>
-          <form id="contactForm" class="glass">
-            <label>Name<input type="text" name="name" required /></label>
-            <label>Email<input type="email" name="email" required /></label>
-            <label>Project Details<textarea name="details" rows="4" required></textarea></label>
-            <button type="submit" class="btn btn-primary">Send Inquiry</button>
-            <p id="formStatus" role="status"></p>
-          </form>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- 6) Footer -->
     <footer class="footer">
-      <div class="container footer-content">
-        <div>
-          <a href="#top" class="logo">VE<span>Studio</span></a>
-          <p>Premium Video Editing for Ambitious Creators.</p>
-        </div>
-        <ul class="quick-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <p>© <span id="year"></span> VEStudio. All rights reserved.</p>
+      <p>© <span id="year"></span> Professional Video Editor • All Rights Reserved</p>
+      <div class="footer-icons">
+        <i class="fa-solid fa-film"></i>
+        <i class="fa-solid fa-star"></i>
       </div>
     </footer>
-
-    <button id="toTop" class="to-top" aria-label="Scroll to top">↑</button>
 
     <script src="script.js"></script>
   </body>
